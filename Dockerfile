@@ -1,5 +1,5 @@
 # Java 17 with Spring Boot 3.2.
-FROM maven:3.9-eclipse-temurin-17
+FROM maven:3.9-amazoncorretto-17
 WORKDIR /app
 COPY pom.xml .
 RUN mvn -q -B dependency:go-offline || true
